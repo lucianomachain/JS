@@ -1,0 +1,216 @@
+body {
+    background-color:rgb(151, 160, 158);
+    }
+
+.prop {
+  width: auto; 
+  color: white;
+  border: none;
+  }
+
+  .prop:hover {
+    color: white;
+    background-color: gray;
+  }
+
+  #head{
+    color: white;
+    font-size: 25px;
+  }
+
+  .borde{
+    margin-top: 1%;
+    height: 40px;
+
+
+  }
+
+  .borde2{
+    margin-top: 1%;
+    
+
+
+  }
+
+  #row2{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+
+
+  }
+
+  .container { 
+    margin-left: 0; 
+    margin-right: 0; 
+} 
+
+.b1{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#text{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#search{
+  width: 70%;
+  padding-top: 0px;
+}
+
+
+.ali{
+  margin-bottom: 10px;
+}
+
+
+.child {
+  display: inline-block;
+ 
+}
+
+
+#f-text{
+  
+  color: white;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+
+}
+
+#footer{
+  background-color: blue;
+  height: 40px;
+  
+}
+
+
+.logo{
+  padding-left: 30px;
+  margin: 10px;
+}
+
+.card-title{
+text-align: center;
+
+}
+
+.card-text{
+  text-align:justify;
+  
+  }
+
+
+.card-img-top{
+
+  height: 200px;
+
+}
+
+.alin{
+  align-items: end;
+}
+
+
+.effect {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor:pointer;
+  outline: none;
+  width: 120px;
+  
+  }
+
+
+.effect:hover {
+  background-color:red;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(5px);
+  
+}
+
+.card:hover {
+  box-shadow: 10px 20px 20px rgba(0,0,0,0.16), 0 20px 20px rgba(0,0,0,0.23);
+}
+
+#price{
+  padding-top: 10px;
+  font-weight: bold;
+
+}
+
+
+
+#Textarea{
+  width:400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#send{
+  margin-top:10px;
+  
+}
+
+.card-details{
+  height: 250px;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius:20px;
+  
+
+}
+
+
+#price-details{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: bold;
+  
+
+}
+
+
+
+
+
+thead th {
+  color: #fff;
+}
+
+.card {
+  border-radius: .5rem;
+}
+
+.table-scroll {
+  border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+  font-size: 1.25rem;
+}
+
+.table-bordered{
+  border-color: gray;
+}
+
+
+
+.table-bordered  {
+  height: 50%;
+}
