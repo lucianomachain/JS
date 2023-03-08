@@ -1,3 +1,11 @@
+.navbar-toggler {
+  border-color: white}
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+  }
+
 body {
     background-color:rgb(151, 160, 158);
     }
@@ -53,8 +61,16 @@ body {
 
 #text{
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 9px;
 }
+
+.form-check-input{
+  height: 13px;
+  
+}
+
 #search{
   width: 70%;
   padding-top: 0px;
@@ -93,6 +109,16 @@ body {
   margin: 10px;
 }
 
+.card{
+  height: 400px;
+  
+  }
+
+#card-det{
+    height: auto;
+    
+    }
+
 .card-title{
 text-align: center;
 
@@ -100,7 +126,7 @@ text-align: center;
 
 .card-text{
   text-align:justify;
-  
+  height: 70px;
   }
 
 
@@ -109,6 +135,26 @@ text-align: center;
   height: 200px;
 
 }
+
+
+#card-title-d{
+  text-align: auto;
+  
+  }
+  
+#card-text-d{
+    text-align:auto;
+    height: auto;
+    }
+  
+  
+#card-img-top-d{
+  
+    height: auto;
+  
+  }
+  
+
 
 .alin{
   align-items: end;
@@ -176,6 +222,17 @@ text-align: center;
 
 }
 
+.card-details1{
+  height: 250px;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius:20px;
+  align-self: auto;
+  position: relative;
+    
+
+}
 
 #price-details{
   margin-top: 10px;
@@ -214,3 +271,8 @@ thead th {
 .table-bordered  {
   height: 50%;
 }
+
+.card-d{
+height: auto;
+  
+  }
