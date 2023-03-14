@@ -127,9 +127,18 @@ text-align: center;
 .card-text{
   text-align:justify;
   height: 70px;
+  padding-left: 30px;
   }
 
 
+.card-text1{
+    text-align:justify;
+    height: 70px;
+    padding-left: 0px;
+}
+  
+  
+  
 .card-img-top{
 
   height: 200px;
@@ -193,7 +202,7 @@ text-align: center;
   box-shadow: 10px 20px 20px rgba(0,0,0,0.16), 0 20px 20px rgba(0,0,0,0.23);
 }
 
-#price{
+.price{
   padding-top: 10px;
   font-weight: bold;
 
