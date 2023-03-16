@@ -11,7 +11,7 @@ const n = data.events.length
 
     
     let newCard = document.createElement('DIV');
- 
+    newCard.id = "div_id";
     let cardbootstrap = `
        <div id=${id} class="card" style="width: 18rem;"> 
            <img src=${imagen}
@@ -62,17 +62,25 @@ function categoria(category_name, checkbox_id) {
       checkbox.addEventListener('click', (event) =>{
       const cards = document.querySelectorAll("#"+ checkbox_id +"_card");
       
+     
+      
       //si el filtro esta vacio hace un promt avisando
       if(cards==null){alert("Not event was found! Please select another event");}
       
       if(event.target.checked){
-
+        
           cards.forEach(card => card.style.display = 'flex');
+          cards.forEach(card => card.parentNode.style.display = 'flex');
+    
+          
       }
      else {
       
           cards.forEach(card => card.style.display = 'none');
-      
+          cards.forEach(card => card.parentNode.style.display = 'none');
+         
+
+          
       }
      })
      
@@ -114,10 +122,17 @@ function buscar_evento(e){
 
     if(evento[0]==null){alert("Not event was found! Please select another event");}
       
- //   input.value = ''
+    input.value = ''
 
     const cards = document.querySelectorAll("#FoodFair_card, #Museum_card,#CostumeParty_card, #MusicConcert_card,#Race_card, #BookExchange_card,#Cinema_card");
     cards.forEach(card => card.style.display = 'none');
+
+    const cards_div = document.querySelectorAll("#div_id");
+    cards_div.forEach(card => card.style.display = 'none');
+
+    const cb = document.querySelectorAll(".form-check-input");
+    cb.forEach(e => e.checked = false)
+
 
     evento.forEach(function(param){
         
@@ -125,19 +140,41 @@ function buscar_evento(e){
         let evento = events.filter((evento)=> evento._id == param._id)
 
         const card =  (document.getElementsByClassName('card'))
+        const card_div = document.querySelectorAll("#div_id");
     
         for (let i = 0; i < card.length; i++) {  
         
             if( evento[0]._id == card[i].firstElementChild.id ){
 
                 card[i].style.display = 'flex'
+                card_div[i].style.display = 'flex'
+
+                cb.forEach(function(e) {
+                    
+                    if(e.id == card[i].id.replace("_card", "")){
+                        e.checked = true
+                  //    console.log(e.id)
+                    }
+                    else{
+                    
+                    }
+
+
+                });
       
+               
             }
             else{
 
             }
         }
     })
+
+// pone los checks correctos    
+
+    
+
+    
 
 }
 
