@@ -2,14 +2,18 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id')
 
-import { data } from "./data.js"
+//import { data } from "./data.js"
+const url = "https://mindhub-xj03.onrender.com/api/amazing"
+const response = await fetch(url);
+const data = await response.json();
+
 
 const cdate = data.currentDate
 
 const events = data.events
 let evento = events.filter((evento)=> evento._id == id)
 
-console.log(evento)
+//console.log(evento)
 
 if (evento.length == 0) {
     alert("Not event was selected! Please go back and click on event picture or description to get details")
@@ -62,8 +66,14 @@ else
 
     }
 
+    if (evento[0].assistance==undefined){
     buid_card(evento[0].image, evento[0].name, evento[0].description, evento[0].price, 
-        evento[0].date, evento[0].place, evento[0].capacity, evento[0].assistance)
-
+        evento[0].date, evento[0].place, evento[0].capacity, evento[0].estimate + " (estimated)")
+    
+    }
+    else {
+        buid_card(evento[0].image, evento[0].name, evento[0].description, evento[0].price, 
+            evento[0].date, evento[0].place, evento[0].capacity, evento[0].assistance)
+    }
 
 }

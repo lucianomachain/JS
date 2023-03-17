@@ -10,6 +10,9 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/assets/images/Logo Amazing Events.png">
     <link rel="stylesheet" href="style.css">
+
+    <script src="scripts/stats.js" type="module"></script>
+
 </head>
 
 <body>
@@ -80,22 +83,16 @@
                           </thead>
                           <tbody>
                             <tr style="background-color: rgb(207, 196, 196); font-weight: bold">
-                              <td>Events with highest percentage of attendance</td>
-                              <td>Events with lowest percentage of attendance</td>
-                              <td>Events woth larger capacity</td>
+                              <td>Event with highest percentage of attendance</td>
+                              <td>Event with lowest percentage of attendance</td>
+                              <td>Event with larger capacity</td>
                               
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
+                              <td id="mayor"></td>
+                              <td id="menor"></td>
+                              <td id="capacidad"></td>
                               
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                
                             </tr>
                             
                           </tbody>
@@ -108,82 +105,34 @@
                               </tr>
                             </thead>
 
-                            <tbody>
+                            <tbody id="tabla2">
                                 <tr style="background-color: rgb(207, 196, 196);font-weight: bold">
                                   <td>Categories</td>
-                                  <td>Revenues</td>
-                                  <td>Percentage of attendances</td>
+                                  <td>Revenues (est.)</td>
+                                  <td>Percentage of attendance (est.)</td>
                                   
                                 </tr>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                </tr>
+                                
                               </tbody>
 
                           
                               
                               <thead style="background-color: rgb(55, 123, 224)">
                                 <tr>
-                                  <th colspan="3">Past Events statistic by category</th>
+                                  <th colspan="3">Past Events statistics by category</th>
                                  
                                 </tr>
                               </thead>
   
-                              <tbody>
+                              <tbody id="tabla3">
                                   <tr style="background-color: rgb(207, 196, 196);font-weight: bold">
                                     <td>Categories</td>
                                     <td>Revenues</td>
-                                    <td>Percentage of attendances</td>
+                                    <td>Percentage of attendance</td>
                                     
-                                  </tr>
-                                  <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                  </tr>
-                                  <tr>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      
-                                  </tr>
-                                  <tr>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      
                                   </tr>
                                   
-                                  <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                </tr>
-                                
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                </tr>
-                                </tbody>
+                              </tbody>
   
                         </table>
                       </div>

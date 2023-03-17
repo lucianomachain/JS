@@ -1,4 +1,9 @@
-import { data } from "./data.js"
+ const url = "https://mindhub-xj03.onrender.com/api/amazing"
+ const response = await fetch(url);
+ const data = await response.json();
+
+
+//import { data } from "./data.js"
 
 const n = data.events.length
 
@@ -36,14 +41,13 @@ const n = data.events.length
     newCard.innerHTML = cardbootstrap;
 
  }
-
 // Agrega o borra segun categorias
-categoria("Food Fair", "FoodFair")
+categoria("Food", "Food")
 categoria("Museum", "Museum")
-categoria("Costume Party", "CostumeParty")
-categoria("Music Concert", "MusicConcert")
+categoria("Party", "Party")
+categoria("Concert", "Concert")
 categoria("Race", "Race")
-categoria("Book Exchange", "BookExchange")
+categoria("Books", "Books")
 categoria("Cinema", "Cinema")
 
 
